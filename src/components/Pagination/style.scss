@@ -1,0 +1,76 @@
+@import "../../vars";
+
+.next_page {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 400px) {
+  .next_page {
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .ant-pagination-item {
+    min-width: 28px;
+    height: 28px;
+    a {
+      font-size: 20px;
+    }
+  }
+  .ant-pagination-prev {
+    min-width: 28px;
+    height: 28px;
+    button.ant-pagination-item-link {
+      span.anticon {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .ant-pagination-jump-next {
+    .ant-pagination-item-container {
+      .ant-pagination-item-ellipsis {
+        text-indent: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .next_page {
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .ant-pagination-item {
+    min-width: 28px;
+    height: 28px;
+    a {
+      font-size: 20px;
+    }
+  }
+  .ant-pagination-prev {
+    min-width: 28px;
+    height: 28px;
+    button.ant-pagination-item-link {
+      span.anticon {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .ant-pagination-jump-next,
+  .ant-pagination-jump-prev {
+    min-width: 18px;
+    .ant-pagination-item-container {
+      .ant-pagination-item-ellipsis {
+        text-indent: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}

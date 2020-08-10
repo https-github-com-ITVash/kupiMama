@@ -1,0 +1,48 @@
+@import "../../vars";
+
+.slick-slider {
+  img {
+    width: 100%;
+  }
+  video {
+    width: 100%;
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+  .slick-dots li button:before {
+    font-size: 20px;
+    color: $second_main_color;
+  }
+}
+// .slick_slider-arrow_first{
+//   position: absolute;
+//   bottom: 30px;
+//   width: 100%;
+//   .slick_left{
+//     position: absolute;
+//     opacity: 0.6;
+//     transition: 0.3s;
+//   }
+//   .slick_left:hover{
+//     opacity: 1;
+//     cursor: pointer;
+//   }
+//   .slick_right{
+//     position: absolute;
+//     opacity: 0.6;
+//     transition: 0.3s;
+//     right: 0;
+//   }
+//   .slick_right:hover{
+//     opacity: 1;
+//     cursor: pointer;
+//   }
+// }
+.slick-dots li button:before {
+  font-size: 65px;
+  color: $second_main_color;
+}

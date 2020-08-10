@@ -1,0 +1,109 @@
+@import "../../vars";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $second_main_color;
+  padding: 20px 40px;
+  margin-top: 20px;
+  .f_sn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    p {
+      font-size: 22px;
+    }
+    .fsn_icons {
+      display: flex;
+      a {
+        margin-right: 40px;
+        margin-top: 20px;
+      }
+      a:last-child {
+        margin-right: 0;
+      }
+      a:hover {
+        transform: scale(1.1);
+        color: unset;
+      }
+    }
+  }
+  .line {
+    border-right: 1px solid #fff;
+    height: 120px;
+  }
+  .f_nav {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .fn_nav {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+    .fn_cop {
+      text-align: center;
+      margin-top: 10px;
+      a {
+        font-size: 18px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
+  .f_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media all and (max-width: 920px) {
+  footer {
+    padding: 10px;
+    flex-direction: column;
+    .line {
+      border-right: none;
+      height: 0;
+    }
+    .f_sn {
+      width: 100%;
+    }
+    .f_nav {
+      width: 100%;
+      .fn_nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    .f_inf {
+      width: 100%;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "../../vars";
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  .nav_wrap_mobil {
+    display: none;
+  }
+  .nav_wrap {
+    position: relative;
+    width: 90%;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $main_color;
+      border-radius: 30px;
+      padding: 0;
+      height: 70px;
+      cursor: pointer;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+        color: $main_color;
+        border-right: 2px solid $main_color;
+        list-style-type: none;
+        width: 13%;
+        height: 100%;
+        font-size: 18px;
+        transition: 0.3s;
+        font-weight: 600;
+      }
+      li:last-child {
+        border-right: none;
+        -moz-border-radius-topright: 27px;
+        -webkit-border-top-right-radius: 27px;
+        border-top-right-radius: 27px;
+        -moz-border-radius-bottomright: 27px;
+        -webkit-border-bottom-right-radius: 27px;
+        border-bottom-right-radius: 27px;
+      }
+      li:first-child {
+        -moz-border-radius-topleft: 27px;
+        -webkit-border-top-left-radius: 27px;
+        border-top-left-radius: 27px;
+        -moz-border-radius-bottomleft: 27px;
+        -webkit-border-bottom-left-radius: 27px;
+        border-bottom-left-radius: 27px;
+      }
+      li:hover {
+        background: $main_color;
+        color: #fff;
+      }
+      li:hover .nav_toogle_1 {
+        display: flex;
+      }
+    }
+    .nav_toogle {
+      display: flex;
+      position: absolute;
+      top: 70px;
+      padding-top: 10px;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      z-index: 9999;
+      .nt_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .nt_box {
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+          margin-bottom: 50px;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          a {
+            color: #000;
+            margin-top: 10px;
+          }
+          a.nt_box_all {
+            color: #a1b9d3;
+            font-size: 22px;
+          }
+          a:hover {
+            color: $second_main_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 920px) {
+  .nav {
+    .nav_wrap {
+      display: none;
+    }
+    .nav_wrap_mobil {
+      display: block;
+      transition: all 0.3s;
+
+      span {
+        color: #000;
+      }
+    }
+  }
+}

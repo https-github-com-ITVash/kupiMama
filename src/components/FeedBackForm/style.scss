@@ -1,0 +1,67 @@
+@import "../../vars";
+
+.feedbackForm_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  .fbf_text {
+    border: 2px solid $second_main_color;
+    border-radius: 30px;
+    background: $second_main_color;
+    padding: 10px 20px;
+    p {
+      color: #fff;
+    }
+  }
+  .ant-form-horizontal {
+    .ant-form-item-control {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .ant-form-item {
+      justify-content: center;
+      width: 100%;
+    }
+    input,
+    textarea {
+      border: 1px solid $second_main_color;
+      border-radius: 30px;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      font-size: 22px;
+      resize: none;
+      color: #000;
+    }
+    input:focus {
+      outline: none;
+    }
+    textarea:focus {
+      outline: none;
+    }
+    button {
+      border: 1px solid $second_main_color;
+      border-radius: 30px;
+      background: $second_main_color;
+      padding: 5px 20px;
+      width: 200px;
+      height: 50px;
+      color: #fff;
+      transition: 0.3s;
+      outline: none;
+    }
+    button:hover {
+      cursor: pointer;
+      background: #fff;
+      span {
+        color: $second_main_color;
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+@import "../../vars";
+
+.mc_sort {
+  display: flex;
+  justify-content: space-between;
+  .ant-dropdown-link {
+    border: 2px solid $main_color;
+    border-radius: 30px;
+    background: $main_color;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+      background: #fff;
+      color: $main_color;
+    }
+  }
+  .mcs_bg {
+    display: flex;
+    align-items: center;
+    .for_boy {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      input {
+        display: none;
+      }
+      input:checked ~ label {
+        background-color: $main_color;
+        color: #fff;
+      }
+      label {
+        background: #fff;
+        color: #000;
+        border: 1px solid $main_color;
+        padding: 16px 30px;
+        border-radius: 30px;
+        margin-right: 20px;
+        user-select: none;
+      }
+      label:hover {
+        cursor: pointer;
+      }
+      label:last-child {
+        margin-right: 0;
+      }
+    }
+    .for_girl {
+      display: flex;
+      align-items: center;
+      input {
+        display: none;
+      }
+      input:checked ~ label {
+        background-color: $main_color;
+        color: #fff;
+      }
+      label {
+        background: #fff;
+        color: #000;
+        border: 1px solid $main_color;
+        padding: 16px 30px;
+        border-radius: 30px;
+        margin-right: 20px;
+        user-select: none;
+      }
+      label:hover {
+        cursor: pointer;
+      }
+      label:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.ant-dropdown-menu {
+  border: 1px solid $second_main_color;
+  border-radius: 20px;
+  padding: 0;
+  li {
+    font-size: 18px;
+    &:hover {
+      background: $main_color;
+    }
+  }
+  li:first-child {
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  li:last-child {
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .main_content {
+    .mc_sort {
+      .mcs_bg {
+        form {
+          label {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .mc_sort {
+    .mcs_bg {
+      label {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .mc_sort {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    .ant-dropdown-link {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 920px) {
+  .mcs_sort {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    .mcs_bg {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      .for_boy,
+      .for_girl {
+        height: 60px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 710px) {
+  .mc_sort {
+    width: 100%;
+    flex-direction: column;
+    height: unset;
+    .ant-dropdown-link {
+      width: 80%;
+      height: 60px;
+      margin-bottom: 20px;
+      font-size: 26px;
+      margin-right: 0;
+    }
+    .mcs_bg {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      flex-direction: row;
+      justify-content: center;
+      .for_boy,
+      .for_girl {
+        height: 60px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  .mc_sort {
+    .ant-dropdown-link {
+      font-size: 22px;
+    }
+    .mcs_bg {
+      margin-top: 20px;
+      .for_boy,
+      .for_girl {
+        height: 60px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .mc_sort {
+    margin-bottom: 0;
+    .ant-dropdown-link {
+      font-size: 18px;
+    }
+    .mcs_bg {
+      margin-top: 20px;
+      .for_boy,
+      .for_girl {
+        height: 60px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 380px) {
+  .mc_sort {
+    .ant-dropdown-link {
+      font-size: 20px;
+    }
+    .mcs_bg {
+      .for_boy,
+      .for_girl {
+        label {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .mc_sort {
+    .ant-dropdown-link {
+      font-size: 16px;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .mc_sort {
+    .mcs_bg {
+      margin-top: 20px;
+      .for_boy,
+      .for_girl {
+        label {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

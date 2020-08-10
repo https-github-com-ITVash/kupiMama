@@ -1,0 +1,15 @@
+export { default as Home } from "./Home";
+export { default as Sale } from "./Sale";
+export { default as Delivery } from "./Delivery";
+export { default as Warranty } from "./Warranty";
+export { default as Shops } from "./Shops";
+export { default as Contacts } from "./Contacts";
+export { default as Input } from "./Input";
+export { default as Registration } from "./Registration";
+export { default as PersonalArea } from "./PersonalArea";
+export { default as MyPurchases } from "./MyPurchases";
+export { default as Basket } from "./Basket";
+export { default as EditProfile } from "./EditProfile";
+export { default as FeedbackForm } from "./FeedbackForm";
+export { default as ProductPage } from "./ProductPage";
+export { default as FeedbackOpt } from "./FeedbackOpt";

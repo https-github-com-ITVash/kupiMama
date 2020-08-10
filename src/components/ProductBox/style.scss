@@ -1,0 +1,517 @@
+@import "../../vars";
+
+.mc_products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .mcp_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 30%;
+    border: 2px solid $second_main_color;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    /* margin-right: 5px;
+          margin-left: 5px; */
+    img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
+    hr {
+      border: 1px solid $main_color;
+      width: 80%;
+      margin-bottom: 0;
+    }
+    .mcp_box_text {
+      width: 90%;
+      // background: #ccedfa;
+      margin: 10px;
+      padding: 10px;
+      p {
+        color: #fff;
+      }
+      p.title {
+        color: $main_color;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .mcpbt_text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        .mcpbt_descript {
+          width: 60%;
+          font-weight: 600;
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+              font-size: 20px;
+            }
+            li::before {
+              content: "-";
+              color: #000;
+              margin-right: 5px;
+            }
+          }
+        }
+        .mcpbt_price {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          p {
+            font-weight: 600;
+          }
+          padding: 5px 10px;
+          p.old_price {
+            align-self: center;
+            font-size: 12px;
+            color: #af0513;
+            text-decoration: line-through;
+          }
+          p.price {
+            align-self: flex-start;
+            font-size: 20px;
+            color: $main_color;
+            color: red;
+          }
+          p.price_title_off {
+            align-self: flex-end;
+            font-size: 12px;
+            color: $second_main_color;
+          }
+          p.price_title_on {
+            align-self: flex-end;
+            font-size: 14px;
+            color: $second_main_color;
+          }
+        }
+      }
+      .mcp_box_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        a {
+          color: $main_color;
+          text-decoration: underline;
+          font-size: 16px;
+        }
+        form {
+          button {
+            color: #fff;
+            background: #f68f30;
+            border: none;
+            border-radius: 30px;
+            padding: 8px 10px;
+            transition: 0.3s;
+            border: 1px solid #f68f30;
+            font-size: 14px;
+          }
+          button:hover {
+            cursor: pointer;
+            color: #f68f30;
+            background: #fff;
+            border: 1px solid #f68f30;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .mc_products {
+    .mcp_box {
+      width: 22%;
+      .mcp_box_text {
+        .mcpbt_text {
+          .mcpbt_descript {
+            ul {
+              li {
+                font-size: 20px;
+              }
+            }
+          }
+          .mcpbt_price {
+            p.old_price {
+              font-size: 16px;
+            }
+            p.price {
+              font-size: 25px;
+            }
+            p.price_title_off {
+              font-size: 18px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          form {
+            button {
+              font-size: 16px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .mc_products {
+    .mcp_box {
+      .mcp_box_text {
+        .mcpbt_text {
+          .mcpbt_descript {
+            ul {
+              li {
+                font-size: 20px;
+              }
+            }
+          }
+          .mcpbt_price {
+            p.old_price {
+              font-size: 20px;
+            }
+            p.price {
+              font-size: 30px;
+            }
+            p.price_title_off {
+              font-size: 18px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          form {
+            button {
+              font-size: 16px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .mc_products {
+    .mcp_box {
+      width: 45%;
+      .mcp_box_text {
+        padding: 0;
+        .mcp_box_btn {
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 920px) {
+  .mc_products {
+    width: 100%;
+    .mcp_box {
+      width: 45%;
+      margin: 20px 0;
+      .mcp_box_text {
+        .mcpbt_text {
+          .mcpbt_price {
+            p.old_price {
+              font-size: 20px;
+            }
+            p.price {
+              font-size: 26px;
+            }
+            p.price_title_off {
+              font-size: 16px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 18px;
+          }
+          form {
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 710px) {
+  .mc_products {
+    width: 100%;
+    .mcp_box {
+      width: 48%;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .mcp_box_text {
+        p.title {
+          font-size: 20px;
+        }
+        .mcpbt_text {
+          .mcpbt_descript {
+            ul {
+              li {
+                font-size: 16px;
+              }
+            }
+          }
+          .mcpbt_price {
+            padding: 0;
+            p.old_price {
+              font-size: 18px;
+            }
+            p.price {
+              font-size: 22px;
+            }
+            p.price_title_off {
+              font-size: 14px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 14px;
+          }
+          form {
+            button {
+              padding: 5px 7px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  .mc_products {
+    .mcp_box {
+      width: 49%;
+      padding: 2px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .mcp_box_text {
+        p.title {
+          font-size: 20px;
+        }
+        .mcpbt_descript {
+          ul {
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 12px;
+          }
+          form {
+            button {
+              padding: 5px 8px;
+              font-size: 9px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          width: 60px;
+          height: 60px;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .mc_products {
+    .mcp_box {
+      border: 1px solid $second_main_color;
+      border-radius: 20px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .mcp_box_text {
+        padding: 0;
+        width: 95%;
+        p.title {
+          font-size: 16px;
+        }
+        .mcpbt_text {
+          .mcpbt_descript {
+            ul {
+              li {
+                font-size: 10px;
+              }
+            }
+          }
+          .mcpbt_price {
+            p.old_price {
+              font-size: 10px;
+            }
+            p.price {
+              font-size: 12px;
+            }
+            p.price_title_off {
+              font-size: 10px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 10px;
+          }
+          form {
+            button {
+              padding: 5px 8px;
+              font-size: 9px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          width: 60px;
+          height: 60px;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media all and (max-width: 380px) {
+
+// }
+
+@media all and (max-width: 360px) {
+  .mc_products {
+    .mcp_box {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      .mcp_box_text {
+        padding: 0;
+        width: 95%;
+        margin-top: 0;
+        p.title {
+          font-size: 12px;
+        }
+        .mcpbt_text {
+          .mcpbt_descript {
+            ul {
+              li {
+                font-size: 9px;
+              }
+            }
+          }
+          .mcpbt_price {
+            p.old_price {
+              font-size: 8px;
+            }
+            p.price {
+              font-size: 12px;
+            }
+            p.price_title_off {
+              font-size: 8px;
+            }
+          }
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 8px;
+          }
+          form {
+            button {
+              padding: 3px 5px;
+              font-size: 8px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          width: 40px;
+          height: 40px;
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .mc_products {
+    .mcp_box {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .mcp_box_text {
+        p.title {
+          font-size: 10px;
+        }
+        .mcpbt_text {
+          padding: 0;
+        }
+        .mcp_box_btn {
+          a {
+            font-size: 8px;
+          }
+          form {
+            button {
+              padding: 3px 5px;
+              font-size: 7px;
+            }
+          }
+        }
+        .mcpbt_stock {
+          width: 40px;
+          height: 40px;
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
