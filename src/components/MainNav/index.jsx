@@ -56,7 +56,11 @@ const MainNav = () => {
           <div className="nav_toogle toggle_0" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
@@ -66,68 +70,32 @@ const MainNav = () => {
                 </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
-              </div>
-              <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
