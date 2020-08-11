@@ -1,5 +1,5 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
 import React from "react"
-import { useDispatch } from "react-redux"
 import { Switch, Route } from "react-router-dom"
 
 import {
@@ -20,14 +20,7 @@ import {
 	FeedbackOpt,
 } from "./Pages"
 
-import { actProduct } from "./redux/actions"
-
 function App() {
-	const dispatch = useDispatch()
-
-	React.useEffect(() => {
-		dispatch(actProduct.getAll())
-	}, [dispatch])
 	return (
 		<>
 			<Switch>

@@ -1,6 +1,7 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 
 import {
 	Headers,
@@ -12,17 +13,28 @@ import {
 	Pagination,
 } from "../components"
 
+import { actProduct } from "../redux/actions"
+
 const Home = () => {
+	const dispatch = useDispatch()
 	const [pages, setPages] = React.useState({
 		current: 1,
 		pages: 15,
 		startIndex: 0,
 		endIndex: 15,
 	})
-	const { product, isLoading } = useSelector(({ products }) => ({
-		product: products.items,
-		isLoading: products.isLoading,
-	}))
+	const { product, isLoading, category, sortBy } = useSelector(
+		({ products, filters }) => ({
+			product: products.items,
+			isLoading: products.isLoading,
+			category: filters.category,
+			sortBy: filters.sorted,
+		}),
+	)
+
+	React.useEffect(() => {
+		dispatch(actProduct.getAllSort(category, sortBy))
+	}, [category, sortBy])
 	return (
 		<>
 			<Helmet>
@@ -49,7 +61,7 @@ const Home = () => {
 									<ProductBox
 										key={index}
 										{...item}
-										sale={item.price_three < item.price_one}
+										sale={item.price_three < item.price_one ? true : false}
 									/>
 								))
 						)}

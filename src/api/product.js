@@ -2,8 +2,12 @@ import axios from "axios"
 
 const products = {
 	getAll: () => axios.get("product"),
-	sorted: (sort, filt) =>
-		axios.get(`product?price_one=${sort}&categoryID=${filt}`),
+	sorted: (category, sortBy) =>
+		axios.get(
+			`product?${category !== null ? `categoryID=${category}` : ""}&_sort=${
+				sortBy.type
+			}&_order=${sortBy.order}`,
+		),
 }
 
 export default products

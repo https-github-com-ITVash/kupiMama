@@ -77,5 +77,8 @@ const ProductBox = ({
 ProductBox.propTypes = {
 	sale: PropTypes.bool,
 }
+ProductBox.defaultProps = {
+	sale: false,
+}
 
 export default ProductBox

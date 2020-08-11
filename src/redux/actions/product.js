@@ -12,6 +12,12 @@ const actions = {
 			.then(({ data }) => dispatch(actions._getAll(data)))
 			.catch((err) => console.log("Ошибка при загрузки данных!!!", err))
 	},
+	getAllSort: (category, sortBy) => (dispatch) => {
+		products
+			.sorted(category, sortBy)
+			.then(({ data }) => dispatch(actions._getAll(data)))
+			.catch((err) => console.log("Ошибка при загрузки данных!!!", err))
+	},
 }
 
 export default actions
