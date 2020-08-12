@@ -1,19 +1,20 @@
 import React from "react";
 import "./style.scss";
 
-import { Menu } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
-const { SubMenu } = Menu;
+// import { Menu } from "antd";
+// import { MenuOutlined } from "@ant-design/icons";
+
+// const { SubMenu } = Menu;
 
 const MainNav = () => {
   const toogleRef = React.useRef(null);
   const buttRef = React.useRef(null);
   const [togleView, setTogleView] = React.useState(null);
-  const [mobil, setMobil] = React.useState(1);
-  const [mobileVisible, setMobileVisible] = React.useState(false);
-  const handleClick = (e) => {
-    setMobil(e.key);
-  };
+  // const [mobil, setMobil] = React.useState(1);
+  // const [mobileVisible, setMobileVisible] = React.useState(false);
+  // const handleClick = (e) => {
+  //   setMobil(e.key);
+  // };
   const filterType = [
     "Гигиена и уход",
     "Питание и кормление",
@@ -56,7 +57,21 @@ const MainNav = () => {
           <div className="nav_toogle toggle_0" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <a href="">
+                <a href="" className="ntb_title">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
+                <a href="#/">asdasd</a>
+                <a href="#/">zxczxc zxc zx z</a>
+                <a href="#/">asdas as zxc 3</a>
+                <a href="#/">qweqweas asdas 4</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
+              </div>
+              <div className="nt_box">
+                <a href="" className="ntb_title">
                   <img src="img/stroller.jpg" alt="" />
                   Коляски
                 </a>
@@ -70,21 +85,7 @@ const MainNav = () => {
                 </a>
               </div>
               <div className="nt_box">
-                <a href="">
-                  <img src="img/stroller.jpg" alt="" />
-                  Коляски
-                </a>
-
-                <a href="#/">Коляска 1</a>
-                <a href="#/">Коляска 2</a>
-                <a href="#/">Коляска 3</a>
-                <a href="#/">Коляска 4</a>
-                <a href="#/" className="nt_box_all">
-                  Все 10 категорий
-                </a>
-              </div>
-              <div className="nt_box">
-                <a href="">
+                <a href="" className="ntb_title">
                   <img src="img/stroller.jpg" alt="" />
                   Коляски
                 </a>
@@ -104,28 +105,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_1" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/logo.png" alt="" />
+                <a href="">
+                  <img src="img/photo.png" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -134,28 +153,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_2" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -164,28 +201,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_3" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -194,28 +249,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_4" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -224,28 +297,60 @@ const MainNav = () => {
           <div className="nav_toogle toggle_5" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
+              </div>
+              <div className="nt_box">
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
+                <a href="#/">Коляска 1</a>
+                <a href="#/">Коляска 2</a>
+                <a href="#/">Коляска 3</a>
+                <a href="#/">Коляска 4</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -254,28 +359,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_6" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -284,28 +407,46 @@ const MainNav = () => {
           <div className="nav_toogle toggle_7" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
@@ -314,35 +455,53 @@ const MainNav = () => {
           <div className="nav_toogle toggle_8" ref={toogleRef}>
             <div className="nt_wrap">
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
               <div className="nt_box">
-                <img src="img/stroller.jpg" alt="" />
+                <a href="">
+                  <img src="img/stroller.jpg" alt="" />
+                  Коляски
+                </a>
+
                 <a href="#/">Коляска 1</a>
                 <a href="#/">Коляска 2</a>
                 <a href="#/">Коляска 3</a>
                 <a href="#/">Коляска 4</a>
-                <a href="#/">Коляска 5</a>
+                <a href="#/" className="nt_box_all">
+                  Все 10 категорий
+                </a>
               </div>
             </div>
           </div>
         )}
       </div>
-      <div className="nav_wrap_mobil">
-        <span>
+      {/* <div className="nav_wrap_mobil">
+        <span className="mobilTrigger">
           <MenuOutlined
             onClick={() => {
               setMobileVisible((prev) => !prev);
@@ -358,51 +517,67 @@ const MainNav = () => {
             selectedKeys={[mobil]}
             mode="inline"
           >
-            <SubMenu key="sub1" title="Navigation One">
-              <Menu.Item key="1">Option 1</Menu.Item>
-              <Menu.Item key="2">Option 2</Menu.Item>
-              <Menu.Item key="3">Option 3</Menu.Item>
-              <Menu.Item key="4">Option 4</Menu.Item>
+            <SubMenu key="sub1" title="Гигиена и уход">
+              <Menu.Item key="1">
+                <img src="img/logo.png" alt="" /> Asasd qwe
+              </Menu.Item>
+              <Menu.Item key="2">
+                <img src="img/post.png" alt="" /> Dsdwdwd sas
+              </Menu.Item>
+              <Menu.Item key="3">
+                <img src="img/post.png" alt="" /> Rewefd sdfs
+              </Menu.Item>
+              <Menu.Item key="4">
+                <img src="img/award1.png" alt="" /> Fsdfsd sd sd ds
+              </Menu.Item>
             </SubMenu>
-            <SubMenu key="sub2" title="Navigation Two">
+            <SubMenu key="sub2" title="Питание и кормление">
               <Menu.Item key="5">Option 5</Menu.Item>
               <Menu.Item key="6">Option 6</Menu.Item>
-              <SubMenu key="sub3" title="Submenu">
-                <Menu.Item key="7">Option 7</Menu.Item>
-                <Menu.Item key="8">Option 8</Menu.Item>
-              </SubMenu>
             </SubMenu>
-            <SubMenu key="sub3" title="Navigation Three">
+            <SubMenu key="sub3" title="Прогулка и путишествие">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
               <Menu.Item key="12">Option 12</Menu.Item>
             </SubMenu>
-            <SubMenu key="sub4" title="Navigation Three">
+            <SubMenu key="sub4" title="Детская комната">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
               <Menu.Item key="12">Option 12</Menu.Item>
             </SubMenu>
-            <SubMenu key="sub5" title="Navigation Three">
+            <SubMenu key="sub5" title="Одежда и обувь">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
               <Menu.Item key="12">Option 12</Menu.Item>
             </SubMenu>
-            <SubMenu key="sub6" title="Navigation Three">
+            <SubMenu key="sub6" title="Игрушки и игры">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
               <Menu.Item key="12">Option 12</Menu.Item>
             </SubMenu>
-            <SubMenu key="sub7" title="Navigation Three">
+            <SubMenu key="sub7" title="Школа и констовары">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
               <Menu.Item key="12">Option 12</Menu.Item>
             </SubMenu>
-            <SubMenu key="sub8" title="Navigation Three">
+            <SubMenu key="sub8" title="Книги">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub9" title="Спорт и отдых">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub10" title="Ещё">
               <Menu.Item key="9">Option 9</Menu.Item>
               <Menu.Item key="10">Option 10</Menu.Item>
               <Menu.Item key="11">Option 11</Menu.Item>
@@ -410,7 +585,7 @@ const MainNav = () => {
             </SubMenu>
           </Menu>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

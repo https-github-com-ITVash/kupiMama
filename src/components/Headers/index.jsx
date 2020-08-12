@@ -3,7 +3,13 @@ import { MainNav } from "../../components";
 
 import { Link } from "react-router-dom";
 
+import { Menu } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+
 import "./style.scss";
+
+const { SubMenu } = Menu;
+
 const Header = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,17 +19,110 @@ const Header = () => {
       console.log("Компонент будет размантирован");
     };
   }, []);
+
+  const [mobil, setMobil] = React.useState(1);
+  const [mobileVisible, setMobileVisible] = React.useState(false);
+  const handleClick = (e) => {
+    setMobil(e.key);
+  };
   return (
     <header>
       <div className="topNav">
         <Link to="/sale">Распродажа</Link>
-        {/* <a href="sale.html">Распродажа</a> */}
         <Link to="/delivery">Доставка и оплата</Link>
         <Link to="/warranty">Гарантии</Link>
         <Link to="/contacts">Контакты</Link>
         <Link to="/shops">Магазины</Link>
       </div>
-
+      <div className="nav_wrap_mobil">
+        <span className="mobilTrigger">
+          <label
+            onClick={() => {
+              setMobileVisible((prev) => !prev);
+            }}
+          >
+            <MenuOutlined />
+            Меню
+          </label>
+        </span>
+        {mobileVisible && (
+          <Menu
+            theme={"light"}
+            onClick={handleClick}
+            style={{ width: 256 }}
+            defaultOpenKeys={[""]}
+            selectedKeys={[mobil]}
+            mode="inline"
+          >
+            <SubMenu key="sub1" title="Гигиена и уход">
+              <Menu.Item key="1">
+                <img src="img/logo.png" alt="" /> Asasd qwe
+              </Menu.Item>
+              <Menu.Item key="2">
+                <img src="img/post.png" alt="" /> Dsdwdwd sas
+              </Menu.Item>
+              <Menu.Item key="3">
+                <img src="img/post.png" alt="" /> Rewefd sdfs
+              </Menu.Item>
+              <Menu.Item key="4">
+                <img src="img/award1.png" alt="" /> Fsdfsd sd sd ds
+              </Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub2" title="Питание и кормление">
+              <Menu.Item key="5">Option 5</Menu.Item>
+              <Menu.Item key="6">Option 6</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub3" title="Прогулка и путишествие">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub4" title="Детская комната">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub5" title="Одежда и обувь">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub6" title="Игрушки и игры">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub7" title="Школа и констовары">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub8" title="Книги">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub9" title="Спорт и отдых">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub10" title="Ещё">
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10">Option 10</Menu.Item>
+              <Menu.Item key="11">Option 11</Menu.Item>
+              <Menu.Item key="12">Option 12</Menu.Item>
+            </SubMenu>
+          </Menu>
+        )}
+      </div>
       <div className="headers">
         <div className="headers_logo">
           <Link to="/">
