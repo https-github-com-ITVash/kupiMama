@@ -1,5 +1,5 @@
 const actions = {
-	setSort: ({ type, order }) => ({
+	setSort: (type, order) => ({
 		type: "SET_SORT",
 		payload: { type, order },
 	}),
