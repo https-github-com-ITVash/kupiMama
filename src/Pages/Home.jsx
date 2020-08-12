@@ -65,7 +65,7 @@ const Home = () => {
                 ))
             )}
           </div>
-          ffff
+
           <Pagination
             length={product.length}
             pages={pages}
