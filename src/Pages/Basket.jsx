@@ -100,12 +100,8 @@ const Basket = () => {
 		},
 	]
 
-	//const [filtered, setFiltered] = React.useState("")
 	const [sorted, setSorted] = React.useState("Доставка")
 
-	/* const filter_out = (e) => {
-		setFiltered(e)
-	} */
 	const sorted_out = (e) => {
 		setSorted(e)
 	}

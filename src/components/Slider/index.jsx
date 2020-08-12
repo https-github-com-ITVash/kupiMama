@@ -37,7 +37,6 @@ const Slider = () => {
     responsive: [
       {
         breakpoint: 1000,
-        //сообщает, при какой ширине экрана нужно включать настройки
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -46,7 +45,6 @@ const Slider = () => {
       },
       {
         breakpoint: 900,
-        //сообщает, при какой ширине экрана нужно включать настройки
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

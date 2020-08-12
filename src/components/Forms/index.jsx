@@ -3,66 +3,16 @@ import React from "react"
 import {
 	Form,
 	Input,
-	/* Tooltip,
-  Cascader, */
-	/* Select, */
-	/* Row,
-  Col,
-  Checkbox,
-  Button, */
-	/* AutoComplete, */
-	/* TimePicker, */
 	DatePicker,
 } from "antd"
-//import { QuestionCircleOutlined } from "@ant-design/icons";
 
 import "./style.scss"
 
 const Forms = () => {
-	/* const { Option } = Select */
-	/* const AutoCompleteOption = AutoComplete.Option
-	const { RangePicker } = DatePicker */
 	const config = {
 		rules: [{ type: "object", required: true, message: "Please select time!" }],
 	}
-	/* const rangeConfig = {
-		rules: [{ type: "array", required: true, message: "Please select time!" }],
-	}
-
-	const residences = [
-		{
-			value: "zhejiang",
-			label: "Zhejiang",
-			children: [
-				{
-					value: "hangzhou",
-					label: "Hangzhou",
-					children: [
-						{
-							value: "xihu",
-							label: "West Lake",
-						},
-					],
-				},
-			],
-		},
-		{
-			value: "jiangsu",
-			label: "Jiangsu",
-			children: [
-				{
-					value: "nanjing",
-					label: "Nanjing",
-					children: [
-						{
-							value: "zhonghuamen",
-							label: "Zhong Hua Men",
-						},
-					],
-				},
-			],
-		},
-	] */
+	
 	const formItemLayout = {
 		labelCol: {
 			xs: { span: 24 },
@@ -73,44 +23,14 @@ const Forms = () => {
 			sm: { span: 16 },
 		},
 	}
-	/* const tailFormItemLayout = {
-		wrapperCol: {
-			xs: {
-				span: 24,
-				offset: 0,
-			},
-			sm: {
-				span: 16,
-				offset: 8,
-			},
-		},
-	} */
+	
 	const [form] = Form.useForm()
 
 	const onFinish = (values) => {
 		console.log("Received values of form: ", values)
 	}
 
-	/* const prefixSelector = (
-		<Form.Item name='prefix'>
-			<Select>
-				<Option value='86'>+86</Option>
-				<Option value='87'>+87</Option>
-			</Select>
-		</Form.Item>
-	) */
-
-	/* const [autoCompleteResult, setAutoCompleteResult] = React.useState([])
-
-	const onWebsiteChange = (value) => {
-		if (!value) {
-			setAutoCompleteResult([])
-		} else {
-			setAutoCompleteResult(
-				[".com", ".org", ".net"].map((domain) => `${value}${domain}`),
-			)
-		}
-	} */
+	
 	return (
 		<>
 			<Form

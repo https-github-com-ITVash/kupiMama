@@ -157,7 +157,6 @@ const Header = () => {
             <p>12000p.</p>
           </Link>
           <Link to="personalArea">Иванченко Григорий</Link>
-          {/* <a href="#/" className="paOut"><i className="fa fa-sign-out fa-2x aria-hidden="true"></i></a> */}
         </div>
       </div>
 
