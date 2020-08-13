@@ -41,9 +41,7 @@ const MainFilter = ({ filter }) => {
 				sortBy.map((item, index) => (
 					<Menu.Item
 						key={index}
-						onClick={() =>
-							sorted_out("По популярности", item.value, item.order)
-						}
+						onClick={() => sorted_out(item.label, item.value, item.order)}
 					>
 						{item.label}
 					</Menu.Item>
@@ -62,12 +60,11 @@ const MainFilter = ({ filter }) => {
 				))}
 		</Menu>
 	)
-	const activ = sortBy.find((obj) => obj.value === filter.type)
 	return (
-		<div className="mc_sort">
+		<div className='mc_sort'>
 			<Dropdown overlay={filterSort} trigger={["click"]}>
 				<button
-					className="ant-dropdown-link"
+					className='ant-dropdown-link'
 					onClick={(e) => e.preventDefault()}
 				>
 					{sorted ? sorted : "Сортировка"} <DownOutlined />
@@ -76,22 +73,22 @@ const MainFilter = ({ filter }) => {
 
 			<Dropdown overlay={filterFilter} trigger={["click"]}>
 				<button
-					className="ant-dropdown-link"
+					className='ant-dropdown-link'
 					onClick={(e) => e.preventDefault()}
 				>
 					{filtered ? filtered : "Фильтр"} <DownOutlined />
 				</button>
 			</Dropdown>
 
-			<div className="mcs_bg">
-				<div className="for_boy">
-					<input type="checkbox" id="boy" />
-					<label htmlFor="boy">Мальчик</label>
+			<div className='mcs_bg'>
+				<div className='for_boy'>
+					<input type='checkbox' id='boy' />
+					<label htmlFor='boy'>Мальчик</label>
 				</div>
 
-				<div className="for_girl">
-					<input type="checkbox" id="girl" className="ch_girl" />
-					<label htmlFor="girl" className="label_girl">
+				<div className='for_girl'>
+					<input type='checkbox' id='girl' className='ch_girl' />
+					<label htmlFor='girl' className='label_girl'>
 						Девочка
 					</label>
 				</div>

@@ -13,7 +13,7 @@ import {
 	Pagination,
 } from "../components"
 
-import { actProduct } from "../redux/actions"
+import { actProduct, actCart } from "../redux/actions"
 
 const Home = () => {
 	const dispatch = useDispatch()
@@ -31,6 +31,12 @@ const Home = () => {
 			sortBy: filters.sorted,
 		}),
 	)
+	const addToCart = React.useCallback(
+		(obj) => {
+			dispatch(actCart.addToCart(obj))
+		},
+		[dispatch],
+	)
 
 	React.useEffect(() => {
 		dispatch(actProduct.getAllSort(category, sortBy))
@@ -44,9 +50,9 @@ const Home = () => {
 
 			<SectionWrap>
 				<Slider />
-				<div className="main_content">
+				<div className='main_content'>
 					<MainFilter filter={sortBy.type} />
-					<div className="mc_products">
+					<div className='mc_products'>
 						{isLoading ? (
 							<center>
 								<h4>Загрузка</h4>
@@ -60,6 +66,7 @@ const Home = () => {
 										key={index}
 										{...item}
 										sale={item.price_three < item.price_one ? true : false}
+										onAdd={addToCart}
 									/>
 								))
 						)}
