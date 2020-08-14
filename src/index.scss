@@ -400,6 +400,13 @@ section.content {
           td {
             color: $main_color;
             font-size: 18px;
+            .input-number {
+              height: 100%;
+              width: 100%;
+              span {
+                color: #000;
+              }
+            }
             a {
               border: 1px solid $main_color;
               background: $main_color;
@@ -1018,7 +1025,6 @@ section.content {
         }
       }
     }
-
     .input_content {
       display: flex;
       flex-direction: column;
