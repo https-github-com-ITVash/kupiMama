@@ -1,5 +1,9 @@
 export const Types = {
 	ADD_TO_CART: "ADD_TO_CART",
+	MINUS_CART: "MINUS_CART",
+	PLUS_CART: "PLUS_CART",
+	REMOVE_PRODUCT: "REMOVE_PRODUCT",
+	CLEAR_CART: "CLEAR_CART",
 }
 
 const actions = {
@@ -17,6 +21,21 @@ const actions = {
 				types,
 			},
 		})
+	},
+	plusProduct: (id) => ({
+		type: Types.PLUS_CART,
+		payload: id,
+	}),
+	minusProduct: (id) => ({
+		type: Types.MINUS_CART,
+		payload: id,
+	}),
+	removeProduct: (id) => ({
+		type: Types.REMOVE_PRODUCT,
+		payload: id,
+	}),
+	clearCart: {
+		type: Types.CLEAR_CART,
 	},
 }
 export default actions

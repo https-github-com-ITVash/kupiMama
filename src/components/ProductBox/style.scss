@@ -119,12 +119,14 @@
             transition: 0.3s;
             border: 1px solid #f68f30;
             font-size: 14px;
+            outline: transparent;
           }
           button:hover {
             cursor: pointer;
             color: #f68f30;
             background: #fff;
             border: 1px solid #f68f30;
+            outline: transparent;
           }
         }
       }

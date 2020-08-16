@@ -403,11 +403,25 @@ section.content {
             .input-number {
               height: 100%;
               width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              button {
+                height: 25px;
+                width: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                user-select: none;
+                outline: transparent;
+              }
               span {
                 color: #000;
+                margin: 0 5px;
               }
             }
-            a {
+            a, button {
               border: 1px solid $main_color;
               background: $main_color;
               padding: 8px 15px;
@@ -415,10 +429,12 @@ section.content {
               color: #fff;
               transition: 0.3s;
               font-size: 18px;
+              outline: transparent;
             }
-            a:hover {
+            a, button:hover {
               background: #fff;
               color: $main_color;
+              outline: transparent;
             }
             input {
               color: $main_color;
