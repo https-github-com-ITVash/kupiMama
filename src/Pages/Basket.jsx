@@ -67,12 +67,12 @@ const Basket = () => {
 			photo: <img src={item.image} alt={item.title} />,
 			quantity: (
 				<Space>
-					<div className='input-number'>
-						<button className='minus' onClick={() => onMinus(item._id)}>
+					<div className="input-number">
+						<button className="minus" onClick={() => onMinus(item._id)}>
 							-
 						</button>
 						<span>{cart[item._id].length}</span>
-						<button className='plus' onClick={() => onPlus(item._id)}>
+						<button className="plus" onClick={() => onPlus(item._id)}>
 							+
 						</button>
 					</div>
@@ -82,7 +82,7 @@ const Basket = () => {
 			name: item.title,
 			sumPrice: `${cart[item._id].length * item.price_one} р.`,
 			btn: (
-				<Space size='middle'>
+				<Space size="middle">
 					<button onClick={() => onRemove(item._id)}>Отмена</button>
 				</Space>
 			),
@@ -110,10 +110,10 @@ const Basket = () => {
 
 	const filterSort = (
 		<Menu>
-			<Menu.Item key='0' onClick={() => sorted_out("Доставка")}>
+			<Menu.Item key="0" onClick={() => sorted_out("Доставка")}>
 				Доставка
 			</Menu.Item>
-			<Menu.Item key='1' onClick={() => sorted_out("Самовывоз")}>
+			<Menu.Item key="1" onClick={() => sorted_out("Самовывоз")}>
 				Самовывоз
 			</Menu.Item>
 		</Menu>
@@ -123,19 +123,19 @@ const Basket = () => {
 		<>
 			<Headers />
 			<SectionWrap>
-				<div className='myPurch_content'>
-					<p className='title'>Корзина</p>
+				<div className="myPurch_content">
+					<p className="title">Корзина</p>
 					<Table
 						columns={columns}
 						dataSource={datas}
 						bordered={true}
 						pagination={false}
-						scroll={{ x: 900 }}
+						scroll={{ x: datas.length < 1 ? null : 900 }}
 					/>
 
-					<div className='pc_deliver'>
-						<div className='pcd_box'>
-							<div className='pcd_left'>
+					<div className="pc_deliver">
+						<div className="pcd_box">
+							<div className="pcd_left">
 								<p>
 									Доставка по городу - <span>500р.</span>
 								</p>
@@ -145,12 +145,12 @@ const Basket = () => {
 								</p>
 							</div>
 
-							<div className='pcd_right'>
+							<div className="pcd_right">
 								<p>Способ доставки</p>
 
 								<Dropdown overlay={filterSort} trigger={["click"]}>
 									<button
-										className='ant-dropdown-link'
+										className="ant-dropdown-link"
 										onClick={(e) => e.preventDefault()}
 									>
 										{sorted ? sorted : "Доставка"} <DownOutlined />
@@ -159,23 +159,23 @@ const Basket = () => {
 
 								{sorted === "Доставка" && (
 									<>
-										<label htmlFor='adress'>Адресс доставки:</label>
+										<label htmlFor="adress">Адресс доставки:</label>
 										<input
-											type='text'
-											id='adress'
-											placeholder='Адресс'
-											className='inpAdress'
+											type="text"
+											id="adress"
+											placeholder="Адресс"
+											className="inpAdress"
 										/>
 									</>
 								)}
 							</div>
 						</div>
 
-						<button type='button'>Оплатить</button>
+						<button type="button">Оплатить</button>
 
-						<div className='pcd_opt'>
-							<Link to='feedbackOpt'>Для оптовых закупок</Link>
-							<Link to='feedbackForm'>Возникли вопросы?</Link>
+						<div className="pcd_opt">
+							<Link to="feedbackOpt">Для оптовых закупок</Link>
+							<Link to="feedbackForm">Возникли вопросы?</Link>
 						</div>
 					</div>
 				</div>
